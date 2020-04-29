@@ -9,3 +9,7 @@
 .saveCol {
     width: 10%;
 }
+
+textarea {
+    border: none;
+}
