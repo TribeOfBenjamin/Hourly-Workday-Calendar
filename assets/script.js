@@ -1,21 +1,32 @@
 
 $(document).ready(function(){
 
-    let today = moment();
+let hour8Text = $("#hour8")
 
-    let todaysDate = $("<p>").text(today.format("dddd, MMMM Do, YYYY"));
-    $("#todaysDate").append(todaysDate);
-    $("#todaysDate").css("font-weight", "bolder");
+let today = moment();
+
+let todaysDate = $("<p>").text(today.format("dddd, MMMM Do, YYYY"));
+$("#todaysDate").append(todaysDate);
+$("#todaysDate").css("font-weight", "bolder");
 
 
-    $( "button" ).on( "click", function() {
+// Trying to create a save function
+
+
+
+
+// Gets text from local storage and displays in rows
+$( "#hour8").val(localStorage.getItem("8:00"));
+
+
+
+// On click event for save button
+$( "button" ).on( "click", function() {
         
-        alert( "hello!" );
-      });
+    localStorage.setItem("8:00", hour8Text.val());
 
-
-
-
+    alert( "hello!" );
+    });
 
 
 
