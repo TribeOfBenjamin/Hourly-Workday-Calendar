@@ -1,7 +1,9 @@
 
 $(document).ready(function(){
 
-let hour8Text = $("#hour8")
+let hour8Text = $("#hour8");
+let hour9Text = $("#hour9");
+let hour10Text = $("#hour10");
 
 let today = moment();
 
@@ -15,20 +17,36 @@ $("#todaysDate").css("font-weight", "bolder");
 
 
 
-// Gets text from local storage and displays in rows
-$( "#hour8").val(localStorage.getItem("8:00"));
+// Gets text from local storage and displays in rows (first three for now)
+for (let i = 8; i < 11; i++) {
+
+    $( "#hour" + i ).val(localStorage.getItem( i + ":00" ));
+}
+
 
 
 
 // On click event for save button
-$( "button" ).on( "click", function() {
+$( ".saveButton8" ).on( "click", function() {
         
     localStorage.setItem("8:00", hour8Text.val());
 
     alert( "hello!" );
     });
 
+$( ".saveButton9" ).on( "click", function() {
+        
+    localStorage.setItem("9:00", hour9Text.val());
+    
+    alert( "hello!" );
+    });
 
+$( ".saveButton10" ).on( "click", function() {
+
+    localStorage.setItem("10:00", hour10Text.val());
+        
+    alert( "hello!" );
+    });
 
 
 
