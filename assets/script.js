@@ -5,6 +5,13 @@ let hour8Text = $("#hour8");
 let hour9Text = $("#hour9");
 let hour10Text = $("#hour10");
 let hour11Text = $("#hour11");
+let hour12Text = $("#hour12");
+let hour13Text = $("#hour13");
+let hour14Text = $("#hour14");
+let hour15Text = $("#hour15");
+let hour16Text = $("#hour16");
+let hour17Text = $("#hour17");
+let hour18Text = $("#hour18");
 
 let today = moment();
 
@@ -13,7 +20,7 @@ $("#todaysDate").append(todaysDate);
 $("#todaysDate").css("font-weight", "bolder");
 
 // Gets text from local storage and displays in rows (first 3 for now)
-for (let i = 8; i < 12; i++) {
+for (let i = 8; i < 19; i++) {
 
     $( "#hour" + i ).val(localStorage.getItem( i + ":00" ));
 }
@@ -47,18 +54,58 @@ $( ".saveButton11" ).on( "click", function() {
     alert( "hello!" );
     });
 
+$( ".saveButton12" ).on( "click", function() {
+
+    localStorage.setItem("12:00", hour12Text.val());
+                
+    alert( "hello!" );
+    });
+
+$( ".saveButton13" ).on( "click", function() {
+        
+    localStorage.setItem("13:00", hour13Text.val());
+        
+    alert( "hello!" );
+    });
+        
+$( ".saveButton14" ).on( "click", function() {
+                
+    localStorage.setItem("14:00", hour14Text.val());
+            
+    alert( "hello!" );
+    });
+        
+$( ".saveButton15" ).on( "click", function() {
+        
+    localStorage.setItem("15:00", hour15Text.val());
+                
+    alert( "hello!" );
+    });
+        
+$( ".saveButton16" ).on( "click", function() {
+        
+    localStorage.setItem("16:00", hour16Text.val());
+                    
+    alert( "hello!" );
+    });
+        
+$( ".saveButton17" ).on( "click", function() {
+        
+        localStorage.setItem("17:00", hour17Text.val());
+                        
+    alert( "hello!" );
+    });
+
+$( ".saveButton18" ).on( "click", function() {
+        
+    localStorage.setItem("18:00", hour18Text.val());
+                        
+alert( "hello!" );
+});
 
 // Checks if the current hour matches and changes text red
 
-//if (moment().get("hour") === 8) {
-//    $("#hour8").css("color", "red");
-//} else if (moment().get("hour") === 9) {
-//    $("#hour9").css("color", "red");
-//} else if (moment().get("hour") === 10) {
-//    $("#hour10").css("color", "red");
-//}
-
-for (let i = 8; i < 12; i++) {
+for (let i = 8; i < 19; i++) {
 
     if (moment().get("hour") > i) {
         $("#hour" + i + "row").css("background-color", "SteelBlue") && $("#hour" + i).css("background-color", "SteelBlue");
