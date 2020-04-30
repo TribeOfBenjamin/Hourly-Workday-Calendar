@@ -4,6 +4,7 @@ $(document).ready(function(){
 let hour8Text = $("#hour8");
 let hour9Text = $("#hour9");
 let hour10Text = $("#hour10");
+let hour11Text = $("#hour11");
 
 let today = moment();
 
@@ -12,7 +13,7 @@ $("#todaysDate").append(todaysDate);
 $("#todaysDate").css("font-weight", "bolder");
 
 // Gets text from local storage and displays in rows (first 3 for now)
-for (let i = 8; i < 11; i++) {
+for (let i = 8; i < 12; i++) {
 
     $( "#hour" + i ).val(localStorage.getItem( i + ":00" ));
 }
@@ -39,16 +40,35 @@ $( ".saveButton10" ).on( "click", function() {
     alert( "hello!" );
     });
 
+$( ".saveButton11" ).on( "click", function() {
+
+    localStorage.setItem("11:00", hour11Text.val());
+            
+    alert( "hello!" );
+    });
+
 
 // Checks if the current hour matches and changes text red
-if (moment().get("hour") === 8) {
-    $("#hour8").css("color", "red");
-} else if (moment().get("hour") === 9) {
-    $("#hour9").css("color", "red");
-} else if (moment().get("hour") === 10) {
-    $("#hour10").css("color", "red");
-}
 
+//if (moment().get("hour") === 8) {
+//    $("#hour8").css("color", "red");
+//} else if (moment().get("hour") === 9) {
+//    $("#hour9").css("color", "red");
+//} else if (moment().get("hour") === 10) {
+//    $("#hour10").css("color", "red");
+//}
+
+for (let i = 8; i < 12; i++) {
+
+    if (moment().get("hour") > i) {
+        $("#hour" + i).css("color", "blue");
+    } else if (moment().get("hour") === i) {
+        $("#hour" + i).css("color", "red");
+    } else if (moment().get("hour") < i) {
+        $("#hour" + i).css("color", "green");
+    }
+
+}
 
 console.log(moment().get("hour"));
 
