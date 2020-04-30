@@ -61,11 +61,11 @@ $( ".saveButton11" ).on( "click", function() {
 for (let i = 8; i < 12; i++) {
 
     if (moment().get("hour") > i) {
-        $("#hour" + i).css("color", "blue");
+        $("#hour" + i + "row").css("background-color", "SteelBlue") && $("#hour" + i).css("background-color", "SteelBlue");
     } else if (moment().get("hour") === i) {
-        $("#hour" + i).css("color", "red");
+        $("#hour" + i + "row").css("background-color", "Tomato") && $("#hour" + i).css("background-color", "Tomato");
     } else if (moment().get("hour") < i) {
-        $("#hour" + i).css("color", "green");
+        $("#hour" + i + "row").css("background-color", "SpringGreen") && $("#hour" + i).css("background-color", "SpringGreen");
     }
 
 }
