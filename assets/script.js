@@ -13,19 +13,17 @@ let hour16Text = $("#hour16");
 let hour17Text = $("#hour17");
 let hour18Text = $("#hour18");
 
-let today = moment();
-
-let todaysDate = $("<p>").text(today.format("dddd, MMMM Do, YYYY"));
+let todaysDate = $("<p>").text(moment().format("dddd, MMMM Do, YYYY"));
 $("#todaysDate").append(todaysDate);
 $("#todaysDate").css("font-weight", "bolder");
 
-// Gets text from local storage and displays in rows (first 3 for now)
+// Gets text from local storage and displays in rows
 for (let i = 8; i < 19; i++) {
 
     $( "#hour" + i ).val(localStorage.getItem( i + ":00" ));
 }
 
-// On click event for save buttons (first 3 for now; maybe turn into a function?)
+// On click event for save buttons (maybe turn into a function?)
 $( ".saveButton8" ).on( "click", function() {
         
     localStorage.setItem("8:00", hour8Text.val());
