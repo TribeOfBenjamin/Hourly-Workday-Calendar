@@ -65,7 +65,7 @@ for (let i = 8; i < 12; i++) {
     } else if (moment().get("hour") === i) {
         $("#hour" + i + "row").css("background-color", "Tomato") && $("#hour" + i).css("background-color", "Tomato");
     } else if (moment().get("hour") < i) {
-        $("#hour" + i + "row").css("background-color", "SpringGreen") && $("#hour" + i).css("background-color", "SpringGreen");
+        $("#hour" + i + "row").css("background-color", "MediumSpringGreen") && $("#hour" + i).css("background-color", "MediumSpringGreen");
     }
 
 }
