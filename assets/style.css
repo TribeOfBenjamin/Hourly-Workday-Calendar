@@ -18,6 +18,10 @@ textarea {
     border: none;
 }
 
+textarea:hover {
+    color: white;
+}
+
 .btn {
     width: 100px;
     height: 60px;
