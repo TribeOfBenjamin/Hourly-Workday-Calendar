@@ -9,5 +9,7 @@ The hour sections of the calendar also change colors depending on the time of da
 [Here is the link](https://tribeofbenjamin.github.io/Hourly-Workday-Calendar/) to the deployed site.
 
 ## Images
+#1:
 ![#1](assets/images/calendar_1.png)
+#2:
 ![#2](assets/images/calendar_2.png)
