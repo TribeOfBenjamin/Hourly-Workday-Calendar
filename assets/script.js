@@ -27,78 +27,56 @@ for (let i = 8; i < 19; i++) {
 $( ".saveButton8" ).on( "click", function() {
         
     localStorage.setItem("8:00", hour8Text.val());
-
-    alert( "hello!" );
     });
 
 $( ".saveButton9" ).on( "click", function() {
         
     localStorage.setItem("9:00", hour9Text.val());
-    
-    alert( "hello!" );
     });
 
 $( ".saveButton10" ).on( "click", function() {
 
     localStorage.setItem("10:00", hour10Text.val());
-        
-    alert( "hello!" );
     });
 
 $( ".saveButton11" ).on( "click", function() {
 
     localStorage.setItem("11:00", hour11Text.val());
-            
-    alert( "hello!" );
     });
 
 $( ".saveButton12" ).on( "click", function() {
 
     localStorage.setItem("12:00", hour12Text.val());
-                
-    alert( "hello!" );
     });
 
 $( ".saveButton13" ).on( "click", function() {
         
     localStorage.setItem("13:00", hour13Text.val());
-        
-    alert( "hello!" );
     });
         
 $( ".saveButton14" ).on( "click", function() {
                 
     localStorage.setItem("14:00", hour14Text.val());
-            
-    alert( "hello!" );
     });
         
 $( ".saveButton15" ).on( "click", function() {
         
     localStorage.setItem("15:00", hour15Text.val());
-                
-    alert( "hello!" );
     });
         
 $( ".saveButton16" ).on( "click", function() {
         
     localStorage.setItem("16:00", hour16Text.val());
-                    
-    alert( "hello!" );
     });
         
 $( ".saveButton17" ).on( "click", function() {
         
-        localStorage.setItem("17:00", hour17Text.val());
-                        
-    alert( "hello!" );
+    localStorage.setItem("17:00", hour17Text.val());
     });
 
 $( ".saveButton18" ).on( "click", function() {
         
-    localStorage.setItem("18:00", hour18Text.val());
-                        
-alert( "hello!" );
+    localStorage.setItem("18:00", hour18Text.val());             
 });
 
 // Checks if the current hour matches and changes text red
