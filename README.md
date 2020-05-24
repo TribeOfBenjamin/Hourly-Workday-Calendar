@@ -1,5 +1,5 @@
 # Hourly Workday Calendar
-I created an workday calendar which saves text typed into the hourly event information areas.
+I created an hourly workday calendar which saves todo items typed into the hours of the day.
 
 The save buttons on the right save the text to local storage when clicked so the text will be there when the user visits the page again later.
 
