@@ -10,6 +10,6 @@ The hour sections of the calendar also change colors depending on the time of da
 
 ## Images
 #1:
-![#1](assets/images/calendar_1.png)
+![#1](public/assets/images/home.png)
 #2:
-![#2](assets/images/calendar_2.png)
+![#2](public/images/notes.png)
